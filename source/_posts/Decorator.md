@@ -6,6 +6,8 @@ tags:
 ---
 这几天因为要学习 mobx，把 ES7 Decorator 的语法翻出来复习了一下，在这里做个归纳总结。
 
+<!-- more -->
+
 ```js
 @decorator
 class A {}
@@ -14,8 +16,6 @@ class A {}
 class A {}
 A = decorator(A) || A;
 ```
-
-<!-- more -->
 
 修饰器是一个对类进行处理的函数。修饰器函数的第一个参数，就是所要修饰的目标类。
 
@@ -67,3 +67,5 @@ Object.defineProperty(Person.prototype, 'name', descriptor);
 ```
 
 [core-decorators.js](https://github.com/jayphelps/core-decorators)是一个第三方模块，提供了几个常见的修饰器。如 `@autobind`、`@readonly`、`@override` 等。
+
+在 `create-react-app` 中使用 `decorators`： https://www.npmjs.com/package/custom-react-scripts
