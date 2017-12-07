@@ -1,6 +1,7 @@
 ---
 title: create-react-app notes
 tags:
+  - react
 ---
 
 记录关于 `create-react-app` 的一些骚操作。
